@@ -3,13 +3,8 @@ body {
   background-color: #f8f9fa!important;
   font-family: 'Roboto', sans-serif;
 }
-
-.bg-green {
-  background-color: #2dce89!important;
-}
-.bg-header {
-  height: 100%;
-  max-height: 300px;
+.cursor {
+  cursor: pointer;  
 }
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -20,6 +15,24 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 0.5rem;
+}
+
+/* header */
+.bg-green {
+  background-color: #2dce89!important;
+}
+.bg-header {
+  height: 100%;
+  max-height: 300px;
+}
+.search {
+  width: 150px!important;
+}
+.dropdown-menu {
+  width: 300px!important;
+  border: none!important;
+  margin-top: 0.5rem!important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 /* sidebar */
@@ -46,8 +59,14 @@ body {
 .dropmenu {
   transition: all 0.3s ease-in-out;
 }
+.card {
+  border: none!important;
+}
 
 @media (min-width: 767px) {
+  .search {
+  width: 200px!important;
+}
 
 }
 

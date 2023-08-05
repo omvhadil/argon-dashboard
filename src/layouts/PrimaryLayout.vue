@@ -162,34 +162,71 @@ onClickOutside(toggleRef, (event) => {
   <main class="main-content position-relative">
     <!-- begin:navbar  -->
     <nav class="navbar text-white">
-      <div class="row g-0 w-100 px-5 align-items-center">
-        <div class="col-12 col-lg-6">
+      <div class="row g-0 w-100 px-4 align-items-center">
+        <div class="col-12 col-md-5">
           <div class="navbar-brand text-white">
-            <span class="fs-6"> Pages / Dashboard </span>
+            <span class="fs-6">Dashboard </span>
             <p class="fw-semibold">Dashboard</p>
           </div>
         </div>
-        <div class="col-12 col-lg-6">
-          <div class="row w-100">
-            <div class="col-6 col-md-5 ms-auto">
-              <div class="search">
-                <input type="text" class="form-control" id="" placeholder="Search" />
-              </div>
+        <div class="col-12 col-md-7">
+          <div class="d-flex">
+            <div class="search ms-md-auto">
+              <input type="text" class="form-control" id="" placeholder="Search" />
             </div>
-            <div class="col-6 col-md-3 p-0">
-              <div class="d-flex gap-3 fs-5 justify-content-end">
-                <div class="profile">
-                  <i class="ri-user-3-fill"></i>
-                </div>
-                <div class="setting">
-                  <i class="ri-settings-3-fill"></i>
-                </div>
-                <div @click="toggle = !toggle" class="toggle d-block d-lg-none">
-                  <i class="ri-menu-line"></i>
-                </div>
-                <div class="notification">
+            <div class="d-flex gap-3 fs-5 justify-content-end ms-auto ms-md-4 align-items-center">
+              <div class="profile ms-auto d-flex align-items-center gap-1 cursor">
+                <i class="ri-user-3-fill"></i>
+                <span class="d-none d-md-block fs-6">Sign In</span>
+              </div>
+              <div class="setting cursor">
+                <i class="ri-settings-3-fill"></i>
+              </div>
+              <div @click="toggle = !toggle" class="toggle d-block d-lg-none cursor">
+                <i class="ri-menu-line"></i>
+              </div>
+              <div class="notification dropdown cursor">
+                <a
+                  class="text-decoration-none text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <i class="ri-notification-4-fill"></i>
-                </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end p-3">
+                  <li class="d-flex">
+                    <div>
+                      <span>New Message from Laur</span>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div>
+                      <span>New Message from Laur</span>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div>
+                      <span>New Message from Laur</span>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div>
+                      <span>New Message from Laur</span>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div>
+                      <span>New Message from Laur</span>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div>
+                      <span>New Message from Laur</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
