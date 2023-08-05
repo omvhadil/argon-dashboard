@@ -72,22 +72,39 @@ onClickOutside(toggleRef, (event) => {
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Belum Lunas</a>
+                <RouterLink
+                  to="/faktur-pembayaran/belum-lunas"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Belum Lunas</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Refund</a>
+                <RouterLink
+                  to="/faktur-pembayaran/refund"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Refund</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Dibatalkan</a>
+                <RouterLink
+                  to="/faktur-pembayaran/dibatalkan"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Dibatalkan</RouterLink
+                >
               </li>
             </ul>
           </div>
         </li>
         <!-- potongan biaya -->
         <li class="nav-item">
-          <a
-            data-bs-toggle="collapse"
+          <RouterLink
+            active-class="active"
+            to="/potongan-biaya"
             href="#potonganbiaya"
+            data-bs-toggle="collapse"
             role="button"
             aria-expanded="false"
             aria-controls="potonganbiaya"
@@ -96,70 +113,112 @@ onClickOutside(toggleRef, (event) => {
             <i class="ri-building-3-line fs-5" style="color: #000099"></i>
             <span>Potongan Biaya</span>
             <i class="ri-arrow-down-s-line fs-5 fw-semibold ms-auto"></i>
-          </a>
+          </RouterLink>
           <div class="collapse" id="potonganbiaya">
             <ul class="nav-menu ms-4 text-secondary">
               <li class="nav-item">
-                <a href="#" class="nav-link">Table Faktur</a>
+                <RouterLink
+                  to="/potongan-biaya/penerima"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Penerima</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Lunas</a>
+                <RouterLink
+                  to="/potongan-biaya/jenis-potongan"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Jenis Potongan</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Belum Lunas</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Refund</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Dibatalkan</a>
+                <RouterLink
+                  to="/potongan-biaya/sumber-potongan"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Sumber Potongan</RouterLink
+                >
               </li>
             </ul>
           </div>
         </li>
-        <!-- Master Tagihan -->
+        <!-- master tagihan -->
         <li class="nav-item">
-          <a
-            data-bs-toggle="collapse"
+          <RouterLink
+            active-class="active"
+            to="/master-tagihan"
             href="#mastertagihan"
+            data-bs-toggle="collapse"
             role="button"
             aria-expanded="false"
             aria-controls="mastertagihan"
             class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
           >
             <i class="ri-database-2-line fs-5" style="color: #00ff00"></i>
-            <span>Master Tagihan</span>
+            <span>Potongan Biaya</span>
             <i class="ri-arrow-down-s-line fs-5 fw-semibold ms-auto"></i>
-          </a>
+          </RouterLink>
           <div class="collapse" id="mastertagihan">
             <ul class="nav-menu ms-4 text-secondary">
               <li class="nav-item">
-                <a href="#" class="nav-link">Biaya</a>
+                <RouterLink to="/master-tagihan/biaya" exact-active-class="aktif" class="nav-link"
+                  >Biaya</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Group Biaya</a>
+                <RouterLink
+                  to="/master-tagihan/group-biaya"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Group Biaya</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Satuan Biaya</a>
+                <RouterLink
+                  to="/master-tagihan/satuan-biaya"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Satuan Biaya</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Tahun Ajaran</a>
+                <RouterLink
+                  to="/master-tagihan/tahun-ajaran"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Tahun Ajaran</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Kategori Biaya</a>
+                <RouterLink
+                  to="/master-tagihan/Kategori-biaya"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Kategori Biaya</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Master Faktur</a>
+                <RouterLink
+                  to="/master-tagihan/master-faktur"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Master Faktur</RouterLink
+                >
               </li>
             </ul>
           </div>
         </li>
         <!-- dispensasi/keringanan -->
         <li class="nav-item">
-          <a href="#" class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary">
+          <RouterLink
+            to="/keringanan-biaya"
+            exact-active-class="active"
+            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
+          >
             <i class="ri-sensor-line fs-5" style="color: #ffcc00"></i>
-            <span>Keringanan/Dispensasi</span>
-          </a>
+            <span>Keringanan/Dispen</span>
+          </RouterLink>
         </li>
         <!-- satuan periode  -->
         <li class="nav-item">
@@ -178,88 +237,82 @@ onClickOutside(toggleRef, (event) => {
   <!-- end:sidebar  -->
   <main class="main-content position-relative">
     <!-- begin:navbar  -->
-    <nav class="navbar text-white">
+    <nav class="navbar pt-4 text-white">
       <div class="row g-0 w-100 px-4 align-items-center">
-        <div class="col-12 col-md-5">
-          <div class="navbar-brand text-white">
-            <span class="fs-6">Dashboard </span>
-            <p class="fw-semibold">Dashboard</p>
+        <div class="col-6">
+          <div class="search">
+            <input type="text" class="form-control" id="" placeholder="Search" />
           </div>
         </div>
-        <div class="col-12 col-md-7">
-          <div class="d-flex">
-            <div class="search ms-md-auto">
-              <input type="text" class="form-control" id="" placeholder="Search" />
+        <div class="col-6">
+          <div class="d-flex gap-3 fs-5 justify-content-end ms-auto ms-md-4 align-items-center">
+            <div class="profile dropdown ms-auto cursor">
+              <a
+                class="text-decoration-none text-white d-flex align-items-center gap-1"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="ri-user-3-fill"></i>
+                <span class="d-none d-md-block fs-6">Sign In</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end mt-2">
+                <li><span class="dropdown-item-text">Profile</span></li>
+                <li><a class="dropdown-item" href="#">Activity Log</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Login</a></li>
+              </ul>
             </div>
-            <div class="d-flex gap-3 fs-5 justify-content-end ms-auto ms-md-4 align-items-center">
-              <div class="profile dropdown ms-auto cursor">
-                <a
-                  class="text-decoration-none text-white d-flex align-items-center gap-1"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="ri-user-3-fill"></i>
-                  <span class="d-none d-md-block fs-6">Sign In</span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end mt-2">
-                  <li><span class="dropdown-item-text">Profile</span></li>
-                  <li><a class="dropdown-item" href="#">Activity Log</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Login</a></li>
-                </ul>
-              </div>
-              <div class="setting cursor">
-                <i class="ri-settings-3-fill"></i>
-              </div>
-              <div @click="toggle = !toggle" class="toggle d-block d-lg-none cursor">
-                <i class="ri-menu-line"></i>
-              </div>
-              <div class="notification dropdown cursor">
-                <a
-                  class="text-decoration-none text-white"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="ri-notification-4-fill"></i>
-                </a>
-                <ul class="dropdown-menu dropnotif dropdown-menu-end p-3">
-                  <li class="d-flex">
-                    <div>
-                      <h6 class="m-0">New Message from Laur</h6>
-                      <p class="text-small text-secondary">13 minutes ago</p>
-                    </div>
-                  </li>
-                  <li class="d-flex">
-                    <div>
-                      <span>New Message from Laur</span>
-                    </div>
-                  </li>
-                  <li class="d-flex">
-                    <div>
-                      <span>New Message from Laur</span>
-                    </div>
-                  </li>
-                  <li class="d-flex">
-                    <div>
-                      <span>New Message from Laur</span>
-                    </div>
-                  </li>
-                  <li class="d-flex">
-                    <div>
-                      <span>New Message from Laur</span>
-                    </div>
-                  </li>
-                  <li class="d-flex">
-                    <div>
-                      <span>New Message from Laur</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+            <div class="setting cursor">
+              <i class="ri-settings-3-fill"></i>
+            </div>
+            <div @click="toggle = !toggle" class="toggle d-block d-lg-none cursor">
+              <i class="ri-menu-line"></i>
+            </div>
+            <div class="notification dropdown cursor">
+              <a
+                class="text-decoration-none text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="ri-notification-4-fill"></i>
+              </a>
+              <ul class="dropdown-menu dropnotif dropdown-menu-end p-3">
+                <li class="d-flex">
+                  <div>
+                    <h6 class="m-0">New Message from Laur</h6>
+                    <p class="text-small text-secondary">13 minutes ago</p>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <div>
+                    <span>New Message from Laur</span>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <div>
+                    <span>New Message from Laur</span>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <div>
+                    <span>New Message from Laur</span>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <div>
+                    <span>New Message from Laur</span>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <div>
+                    <span>New Message from Laur</span>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

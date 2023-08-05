@@ -70,10 +70,25 @@ body {
 .card {
   border: none!important;
 }
+/* dashboard */
+.card-icon {
+  font-size: 1.2rem;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem 1rem 0 0;
+}
 
 @media (min-width: 767px) {
   .search {
-  width: 200px!important;
+  width: 250px!important;
 }
 
 }
@@ -85,5 +100,10 @@ body {
   .sidebar {
     left: 0;
     max-width: 18rem;
+  }
+  .card-icon {
+    font-size: .9rem;
+    width: 30px;
+    height: 30px;
   }
 }
