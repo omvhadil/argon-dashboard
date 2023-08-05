@@ -54,7 +54,7 @@ onClickOutside(toggleRef, (event) => {
             <i class="ri-arrow-down-s-line fs-5 fw-semibold ms-auto"></i>
           </RouterLink>
           <div class="collapse" id="fakturpembayaran">
-            <ul class="nav-menu ms-4">
+            <ul class="nav-menu ms-4 text-secondary">
               <li class="nav-item">
                 <RouterLink
                   to="/faktur-pembayaran/tabel-faktur"
@@ -98,7 +98,7 @@ onClickOutside(toggleRef, (event) => {
             <i class="ri-arrow-down-s-line fs-5 fw-semibold ms-auto"></i>
           </a>
           <div class="collapse" id="potonganbiaya">
-            <ul class="nav-menu ms-4">
+            <ul class="nav-menu ms-4 text-secondary">
               <li class="nav-item">
                 <a href="#" class="nav-link">Table Faktur</a>
               </li>
@@ -132,7 +132,7 @@ onClickOutside(toggleRef, (event) => {
             <i class="ri-arrow-down-s-line fs-5 fw-semibold ms-auto"></i>
           </a>
           <div class="collapse" id="mastertagihan">
-            <ul class="nav-menu ms-4">
+            <ul class="nav-menu ms-4 text-secondary">
               <li class="nav-item">
                 <a href="#" class="nav-link">Biaya</a>
               </li>
