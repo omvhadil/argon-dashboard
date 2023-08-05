@@ -28,7 +28,7 @@ body {
 .search {
   width: 150px!important;
 }
-.dropdown-menu {
+.dropnotif {
   width: 300px!important;
   border: none!important;
   margin-top: 0.5rem!important;
@@ -43,15 +43,16 @@ body {
   z-index: 100;
   width: 100%;
   max-width: 15.6rem;
-  height: 100%;
+  height: calc(100vh - 2rem);
   margin: 1rem 0 1rem 1rem;
   transition: all 0.3s ease-in-out;
+  overflow-y: auto;
 }
 .sidebar.active {
   left: 0;
 }
 .nav-link.active {
-  background-color: #c2f0c2!important;
+  background-color: #f6f9fc!important;
   color: #344767!important;
   border-radius: 0.5rem;
   font-weight: 700;

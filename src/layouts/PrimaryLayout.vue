@@ -16,7 +16,7 @@ onClickOutside(toggleRef, (event) => {
   <!-- begin:sidebar  -->
   <aside
     ref="toggleRef"
-    class="sidebar bg-white position-absolute rounded-4"
+    class="sidebar bg-white position-absolute rounded-start-4"
     :class="toggle ? 'active' : ''"
   >
     <div class="sidebar-header">
@@ -192,9 +192,23 @@ onClickOutside(toggleRef, (event) => {
               <input type="text" class="form-control" id="" placeholder="Search" />
             </div>
             <div class="d-flex gap-3 fs-5 justify-content-end ms-auto ms-md-4 align-items-center">
-              <div class="profile ms-auto d-flex align-items-center gap-1 cursor">
-                <i class="ri-user-3-fill"></i>
-                <span class="d-none d-md-block fs-6">Sign In</span>
+              <div class="profile dropdown ms-auto cursor">
+                <a
+                  class="text-decoration-none text-white d-flex align-items-center gap-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="ri-user-3-fill"></i>
+                  <span class="d-none d-md-block fs-6">Sign In</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end mt-2">
+                  <li><span class="dropdown-item-text">Sign In</span></li>
+                  <li><a class="dropdown-item" href="#">Setting</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                </ul>
               </div>
               <div class="setting cursor">
                 <i class="ri-settings-3-fill"></i>
@@ -212,7 +226,7 @@ onClickOutside(toggleRef, (event) => {
                 >
                   <i class="ri-notification-4-fill"></i>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end p-3">
+                <ul class="dropdown-menu dropnotif dropdown-menu-end p-3">
                   <li class="d-flex">
                     <div>
                       <span>New Message from Laur</span>
