@@ -204,8 +204,8 @@ onClickOutside(toggleRef, (event) => {
                   <span class="d-none d-md-block fs-6">Sign In</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end mt-2">
-                  <li><span class="dropdown-item-text">Sign In</span></li>
-                  <li><a class="dropdown-item" href="#">Setting</a></li>
+                  <li><span class="dropdown-item-text">Profile</span></li>
+                  <li><a class="dropdown-item" href="#">Activity Log</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item" href="#">Login</a></li>
                 </ul>
@@ -229,7 +229,8 @@ onClickOutside(toggleRef, (event) => {
                 <ul class="dropdown-menu dropnotif dropdown-menu-end p-3">
                   <li class="d-flex">
                     <div>
-                      <span>New Message from Laur</span>
+                      <h6 class="m-0">New Message from Laur</h6>
+                      <p class="text-small text-secondary">13 minutes ago</p>
                     </div>
                   </li>
                   <li class="d-flex">
