@@ -27,20 +27,23 @@ onClickOutside(toggleRef, (event) => {
       <ul class="navbar-nav p-3">
         <!-- dashboard -->
         <li class="nav-item">
-          <a
-            href="#"
-            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary active"
+          <RouterLink
+            exact-active-class="active"
+            to="/"
+            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
           >
             <i class="ri-dashboard-3-line fs-5" style="color: #6600ff"></i>
             <span>Dashboard</span>
-          </a>
+          </RouterLink>
         </li>
         <p class="fw-bold text-secondary m-0 my-2 mt-4">TAGIHAN BPS</p>
         <!-- faktur pembayaran -->
         <li class="nav-item">
-          <a
-            data-bs-toggle="collapse"
+          <RouterLink
+            active-class="active"
+            to="/faktur-pembayaran"
             href="#fakturpembayaran"
+            data-bs-toggle="collapse"
             role="button"
             aria-expanded="false"
             aria-controls="fakturpembayaran"
@@ -49,14 +52,24 @@ onClickOutside(toggleRef, (event) => {
             <i class="ri-draft-line fs-5" style="color: #ff6600"></i>
             <span>Faktur Pembayaran</span>
             <i class="ri-arrow-down-s-line fs-5 fw-semibold ms-auto"></i>
-          </a>
+          </RouterLink>
           <div class="collapse" id="fakturpembayaran">
             <ul class="nav-menu ms-4">
               <li class="nav-item">
-                <a href="#" class="nav-link">Table Faktur</a>
+                <RouterLink
+                  to="/faktur-pembayaran/tabel-faktur"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Table Faktur</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Lunas</a>
+                <RouterLink
+                  to="/faktur-pembayaran/lunas"
+                  exact-active-class="aktif"
+                  class="nav-link"
+                  >Lunas</RouterLink
+                >
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Belum Lunas</a>
@@ -150,10 +163,14 @@ onClickOutside(toggleRef, (event) => {
         </li>
         <!-- satuan periode  -->
         <li class="nav-item">
-          <a href="#" class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary">
+          <RouterLink
+            to="/satuan-periode"
+            exact-active-class="active"
+            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
+          >
             <i class="ri-calendar-todo-line fs-5" style="color: #993333"></i>
             <span>Satuan Periode</span>
-          </a>
+          </RouterLink>
         </li>
       </ul>
     </div>

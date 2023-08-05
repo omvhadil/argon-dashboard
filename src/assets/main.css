@@ -56,6 +56,10 @@ body {
   border-radius: 0.5rem;
   font-weight: 700;
 }
+.nav-link.aktif {
+  font-weight: 700;
+  color: #344767!important;
+}
 .dropmenu {
   transition: all 0.3s ease-in-out;
 }

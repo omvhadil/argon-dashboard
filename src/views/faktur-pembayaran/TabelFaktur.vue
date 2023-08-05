@@ -58,7 +58,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="col-12 col-md-6 col-lg-3">
+    <div class="col-12 col-md-6 col-lg-3">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
@@ -76,6 +76,6 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>

@@ -12,6 +12,28 @@ const router = createRouter({
           path: '',
           name: 'dashboard',
           component: () => import('../views/Dashboard.vue')
+        },
+        {
+          path: '/faktur-pembayaran',
+          name: 'faktur-pembayaran',
+          children: [
+            {
+              path: '/faktur-pembayaran/tabel-faktur',
+              name: 'tabel-faktur',
+              component: () => import('../views/faktur-pembayaran/TabelFaktur.vue')
+            },
+            {
+              path: '/faktur-pembayaran/lunas',
+              name: 'lunas',
+              component: () => import('../views/faktur-pembayaran/Lunas.vue')
+            },
+          ]
+        },
+        
+        {
+          path: '/satuan-periode',
+          name: 'satuan-periode',
+          component: () => import('../views/SatuanPeriode.vue')
         }
       ]
     },
