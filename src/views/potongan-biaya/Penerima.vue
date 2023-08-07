@@ -11,7 +11,12 @@
     <div class="card-body">
       <div class="row w-100">
         <div class="col-12 mb-4 mt-3">
-          <input class="form-control" type="search" placeholder="Search" aria-label=" example" />
+          <div class="input-group border rounded-2">
+            <input type="text" class="form-control border-0" id="" placeholder="Cari..." />
+            <span class="input-group-text border-0">
+              <i class="ri-search-line fw-bold text-secondary"></i>
+            </span>
+          </div>
         </div>
       </div>
       <div class="row w-100">
@@ -127,16 +132,16 @@
         </div>
         <div class="col-12 col-md-3 col-lg-4 py-3">
           <div class="d-grid gap-2">
-            <button class="btn btn-secondary" type="button">
+            <button class="btn btn-dark" type="button">
               <i class="ri-save-3-line"></i> Simpan
             </button>
-            <button class="btn btn-secondary" type="button">
+            <button class="btn btn-dark" type="button">
               <i class="ri-eye-line"></i> Pratinjau
             </button>
-            <button class="btn btn-secondary" type="button">
+            <button class="btn btn-dark" type="button">
               <i class="ri-send-plane-line"></i> Kirim
             </button>
-            <button class="btn btn-secondary" type="button">
+            <button class="btn btn-dark" type="button">
               <i class="ri-printer-line"></i> Cetak
             </button>
           </div>

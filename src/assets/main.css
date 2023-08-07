@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
 
 :root {
+  /* font size  */
   --font-normal: 1rem;
   --font-small: 0.875rem;
   --font-smaller: 0.75rem;
   --font-big: 1.25rem;
   --font-bigger: 1.5rem;
+  /* font style  */
   --font-style: 'Open Sans', sans-serif;
-  --color-gradient: linear-gradient(310deg, #2dce89, #2dcecc);
+  /* color  */
+  --color-body: #f8f7fa;
+  --color-green: #2dce89;
+  --color-green-gradient: linear-gradient(310deg, #2dce89, #2dcecc);
 }
 body {
-  background-color: #f8f9fa!important;
+  background-color: var(--color-body)!important;
   font-family: var(--font-style)!important;
 }
 .cursor {
@@ -29,7 +34,7 @@ body {
 
 /* header */
 .bg-green {
-  background-color: #2dce89!important;
+  background-color: var(--color-green)!important;
 }
 .bg-header {
   height: 100%;
@@ -68,13 +73,14 @@ body {
   left: 0;
 }
 .nav-link.active {
-  background-color: #2dce89!important;
+  background-color: var(--color-green)!important;
   color: #fff!important;
   border-radius: 0.5rem;
 }
 .nav-link.actived {
-  background-image: var(--color-gradient)!important;
-  color: #fff!important;
+  background-color: var(--color-body)!important;
+  color: var(--color-green)!important;
+  font-weight: 600;
   border-radius: 0.5rem;
 }
 .nav-link.active span{

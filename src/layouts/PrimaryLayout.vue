@@ -245,8 +245,11 @@ onClickOutside(toggleRef, (event) => {
     <nav class="navbar pt-3 text-white">
       <div class="row g-0 w-100 px-4 align-items-center">
         <div class="col-6">
-          <div class="search">
-            <input type="text" class="form-control" id="" placeholder="Cari..." />
+          <div class="input-group">
+            <span class="input-group-text bg-white border-white">
+              <i class="ri-search-line fw-bold"></i>
+            </span>
+            <input type="text" class="form-control border-0 ps-0" id="" placeholder="Cari..." />
           </div>
         </div>
         <div class="col-6">
