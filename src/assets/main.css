@@ -14,6 +14,14 @@
   --color-green: #2dce89;
   --color-green-gradient: linear-gradient(310deg, #2dce89, #2dcecc);
 }
+.image-svg {
+  width: 300px;
+}
+.title-svg {
+  text-align: center;
+  color: var(--color-green)!important;
+  margin-top: -3rem!important;
+}
 body {
   background-color: var(--color-body)!important;
   font-family: var(--font-style)!important;
@@ -58,16 +66,17 @@ body {
 
 /* sidebar */
 .sidebar {
-  position: fixed;
+  position: fixed!important;
   top: 0;
+  bottom: 0;
   left: -150%;
-  z-index: 100;
   width: 100%;
   max-width: 15.6rem;
   height: calc(100vh - 2rem);
   margin: 1rem 0 1rem 1rem;
   transition: all 0.3s ease-in-out;
   overflow-y: auto;
+  z-index: 999;
 }
 .sidebar.active {
   left: 0;
@@ -127,7 +136,14 @@ body {
   .search {
   width: 250px!important;
 }
-
+.image-svg {
+  width: 400px;
+}
+.title-svg {
+  text-align: center;
+  color: var(--color-green)!important;
+  margin-top: -3rem!important;
+}
 }
 
 @media (min-width: 992px) {

@@ -9,7 +9,7 @@
   </div>
   <div class="card mt-3">
     <div class="card-body">
-      <div class="row w-100">
+      <div class="row">
         <div class="col-12 mb-4 mt-3">
           <div class="input-group border rounded-2">
             <input type="text" class="form-control border-0" id="" placeholder="Cari..." />
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="row w-100">
+      <div class="row">
         <div class="col-12 col-lg-7">
           <div class="mb-4">
             <h5>Detail Peserta Didik</h5>
@@ -87,7 +87,7 @@
   </div>
   <div class="card mt-4">
     <div class="card-body">
-      <div class="row w-100">
+      <div class="row">
         <div class="col-12">
           <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -105,7 +105,7 @@
           </ul>
         </div>
       </div>
-      <div class="row w-100">
+      <div class="row">
         <div class="col-12 col-md-9 col-lg-8">
           <div class="content py-3" style="min-height: 5rem !important">
             <span

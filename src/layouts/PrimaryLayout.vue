@@ -16,7 +16,7 @@ onClickOutside(toggleRef, (event) => {
   <!-- begin:sidebar  -->
   <aside
     ref="toggleRef"
-    class="sidebar shadow-sm bg-white position-absolute rounded-start-4"
+    class="sidebar shadow-sm bg-white rounded-start-4"
     :class="toggle ? 'active' : ''"
   >
     <!-- sidebar header -->

@@ -5,28 +5,46 @@
     <p class="fw-bold">Jenis Potongan</p>
   </div>
   <div class="row">
-    <div class="col-12 mx-auto">
+    <div class="col-12 col-lg-10 mx-auto">
       <div class="card">
         <div class="card-body">
           <div class="table-responsive">
-            <table class="table table-bordered">
-              <thead class="table-light">
+            <table class="table table-bordered table-striped">
+              <thead class="table-success">
                 <tr>
-                  <th scope="col">Jenis Potongan</th>
-                  <th scope="col">Category Potongan</th>
-                  <th scope="col">Tindakan</th>
+                  <th style="width: 150px !important">Jenis Potongan</th>
+                  <th style="width: 150px !important">Category Potongan</th>
+                  <th style="width: 70px !important">Tindakan</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-dark" type="button">
+                        <i class="ri-eye-fill"></i>
+                      </button>
+                      <button class="btn btn-dark" type="button">
+                        <i class="ri-settings-3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-dark" type="button">
+                        <i class="ri-eye-fill"></i>
+                      </button>
+                      <button class="btn btn-dark" type="button">
+                        <i class="ri-settings-3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
