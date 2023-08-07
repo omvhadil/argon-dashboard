@@ -10,7 +10,7 @@
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-semibold text-secondary">Lunas</p>
+              <p class="mb-1 text-uppercase fw-medium text-secondary">Lunas</p>
               <h5 class="fw-bold">2.231</h5>
               <p class="mb-0 text-secondary">Peserta didik</p>
             </div>
@@ -26,7 +26,7 @@
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-semibold text-secondary">belum lunas</p>
+              <p class="mb-1 text-uppercase fw-medium text-secondary">belum lunas</p>
               <h5 class="fw-bold">3.543</h5>
               <p class="mb-0 text-secondary">Peserta didik</p>
             </div>
@@ -42,7 +42,7 @@
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-semibold text-secondary">total faktur</p>
+              <p class="mb-1 text-uppercase fw-medium text-secondary">total faktur</p>
               <h5 class="fw-bold">5.434</h5>
               <p class="mb-0 text-secondary">Faktur</p>
             </div>
@@ -58,7 +58,7 @@
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-semibold text-secondary">total tertagih</p>
+              <p class="mb-1 text-uppercase fw-medium text-secondary">total tertagih</p>
               <h5 class="fw-bold">3.332</h5>
               <p class="mb-0 text-secondary">Peserta didik</p>
             </div>
@@ -74,7 +74,7 @@
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-semibold text-secondary">total penerimaan</p>
+              <p class="mb-1 text-uppercase fw-medium text-secondary">total penerimaan</p>
               <h5 class="fw-bold">Rp 875.774.474</h5>
               <p class="mb-0 text-secondary">Dari 500 Faktur</p>
             </div>

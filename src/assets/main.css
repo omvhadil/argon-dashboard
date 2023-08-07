@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
 
 :root {
   --font-normal: 1rem;
@@ -6,11 +6,12 @@
   --font-smaller: 0.75rem;
   --font-big: 1.25rem;
   --font-bigger: 1.5rem;
-  --font-style: 'Roboto', sans-serif;
+  --font-style: 'Open Sans', sans-serif;
+  --color-gradient: linear-gradient(310deg, #2dce89, #2dcecc);
 }
 body {
   background-color: #f8f9fa!important;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-style)!important;
 }
 .cursor {
   cursor: pointer;  
@@ -71,6 +72,11 @@ body {
   color: #fff!important;
   border-radius: 0.5rem;
 }
+.nav-link.actived {
+  background-image: var(--color-gradient)!important;
+  color: #fff!important;
+  border-radius: 0.5rem;
+}
 .nav-link.active span{
   font-weight: 600;
 }
@@ -83,6 +89,9 @@ body {
 }
 .nav-link i {
   font-size: 1.1rem;
+}
+.head-sign-in {
+  font-size: var(--font-small)
 }
 .dropmenu {
   transition: all 0.3s ease-in-out;

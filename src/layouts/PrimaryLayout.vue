@@ -246,7 +246,7 @@ onClickOutside(toggleRef, (event) => {
       <div class="row g-0 w-100 px-4 align-items-center">
         <div class="col-6">
           <div class="search">
-            <input type="text" class="form-control" id="" placeholder="Search" />
+            <input type="text" class="form-control" id="" placeholder="Cari..." />
           </div>
         </div>
         <div class="col-6">
@@ -261,13 +261,12 @@ onClickOutside(toggleRef, (event) => {
                 aria-expanded="false"
               >
                 <i class="ri-user-3-fill"></i>
-                <span class="d-none d-md-block">Sign In</span>
+                <span class="head-sign-in fw-medium d-none d-md-block">Masuk</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-end mt-2">
-                <li><span class="dropdown-item-text">Profile</span></li>
-                <li><a class="dropdown-item" href="#">Activity Log</a></li>
+                <li><span class="dropdown-item-text">Profil</span></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Masuk</a></li>
               </ul>
             </div>
             <!-- setting -->
