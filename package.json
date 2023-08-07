@@ -11,8 +11,12 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.3.0",
-    "alpinejs": "^3.12.3",
     "bootstrap": "^5.3.1",
+    "datatables.net-bs5": "^1.13.6",
+    "datatables.net-dt": "^1.13.6",
+    "datatables.net-responsive": "^2.5.0",
+    "datatables.net-select": "^1.7.0",
+    "datatables.net-vue3": "^2.1.2",
     "pinia": "^2.1.4",
     "remixicon": "^3.5.0",
     "vue": "^3.3.4",

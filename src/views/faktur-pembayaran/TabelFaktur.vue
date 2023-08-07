@@ -76,7 +76,7 @@
             <div class="">
               <p class="mb-1 text-uppercase fw-semibold text-secondary">total penerimaan</p>
               <h5 class="fw-bold">Rp 875.774.474</h5>
-              <p class="mb-0 text-secondary">Peserta didik</p>
+              <p class="mb-0 text-secondary">Dari 500 Faktur</p>
             </div>
             <div class="card-icon bg-success bg-gradient">
               <i class="ri-wallet-3-line"></i>

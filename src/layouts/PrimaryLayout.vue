@@ -16,27 +16,29 @@ onClickOutside(toggleRef, (event) => {
   <!-- begin:sidebar  -->
   <aside
     ref="toggleRef"
-    class="sidebar bg-white position-absolute rounded-start-4"
+    class="sidebar shadow-sm bg-white position-absolute rounded-start-4"
     :class="toggle ? 'active' : ''"
   >
+    <!-- sidebar header -->
     <div class="sidebar-header">
       <h3 class="text-center p-3">SIMTREN</h3>
     </div>
     <hr class="m-0" />
+    <!-- menu -->
     <div>
-      <ul class="navbar-nav p-3">
+      <ul class="navbar-nav p-2">
         <!-- dashboard -->
         <li class="nav-item">
           <RouterLink
             exact-active-class="active"
             to="/"
-            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
+            class="nav-link py-3 d-flex align-items-center gap-3 px-3 text-secondary"
           >
-            <i class="ri-dashboard-3-line fs-5" style="color: #6600ff"></i>
+            <i class="ri-dashboard-3-line" style="color: #6600ff"></i>
             <span>Dashboard</span>
           </RouterLink>
         </li>
-        <p class="fw-bold text-secondary m-0 my-2 mt-4">TAGIHAN BPS</p>
+        <p class="fw-bold text-secondary m-0 my-2 mt-4 text-small">TAGIHAN BPS</p>
         <!-- faktur pembayaran -->
         <li class="nav-item">
           <RouterLink
@@ -47,11 +49,11 @@ onClickOutside(toggleRef, (event) => {
             role="button"
             aria-expanded="false"
             aria-controls="fakturpembayaran"
-            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
+            class="nav-link py-3 d-flex align-items-center gap-3 px-3 text-secondary"
           >
-            <i class="ri-draft-line fs-5" style="color: #ff6600"></i>
+            <i class="ri-draft-line" style="color: #ff6600"></i>
             <span>Faktur Pembayaran</span>
-            <i class="ri-arrow-down-s-line fs-5 fw-semibold ms-auto"></i>
+            <i class="ri-arrow-down-s-line ms-auto"></i>
           </RouterLink>
           <div class="collapse" id="fakturpembayaran">
             <ul class="nav-menu ms-4 text-secondary">
@@ -59,40 +61,40 @@ onClickOutside(toggleRef, (event) => {
                 <RouterLink
                   to="/faktur-pembayaran/tabel-faktur"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Table Faktur</RouterLink
+                  class="nav-link py-3"
+                  ><span>Table Faktur</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/faktur-pembayaran/lunas"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Lunas</RouterLink
+                  class="nav-link py-3"
+                  ><span>Lunas</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/faktur-pembayaran/belum-lunas"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Belum Lunas</RouterLink
+                  class="nav-link py-3"
+                  ><span>Belum Lunas</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/faktur-pembayaran/refund"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Refund</RouterLink
+                  class="nav-link py-3"
+                  ><span>Refund</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/faktur-pembayaran/dibatalkan"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Dibatalkan</RouterLink
+                  class="nav-link py-3"
+                  ><span>Dibatalkan</span></RouterLink
                 >
               </li>
             </ul>
@@ -108,11 +110,11 @@ onClickOutside(toggleRef, (event) => {
             role="button"
             aria-expanded="false"
             aria-controls="potonganbiaya"
-            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
+            class="nav-link py-3 d-flex align-items-center gap-3 px-3 text-secondary"
           >
-            <i class="ri-building-3-line fs-5" style="color: #000099"></i>
+            <i class="ri-building-3-line" style="color: #000099"></i>
             <span>Potongan Biaya</span>
-            <i class="ri-arrow-down-s-line fs-5 fw-semibold ms-auto"></i>
+            <i class="ri-arrow-down-s-line ms-auto"></i>
           </RouterLink>
           <div class="collapse" id="potonganbiaya">
             <ul class="nav-menu ms-4 text-secondary">
@@ -120,24 +122,24 @@ onClickOutside(toggleRef, (event) => {
                 <RouterLink
                   to="/potongan-biaya/penerima"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Penerima</RouterLink
+                  class="nav-link py-3"
+                  ><span>Penerima</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/potongan-biaya/jenis-potongan"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Jenis Potongan</RouterLink
+                  class="nav-link py-3"
+                  ><span>Jenis Potongan</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/potongan-biaya/sumber-potongan"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Sumber Potongan</RouterLink
+                  class="nav-link py-3"
+                  ><span>Sumber Potongan</span></RouterLink
                 >
               </li>
             </ul>
@@ -153,57 +155,60 @@ onClickOutside(toggleRef, (event) => {
             role="button"
             aria-expanded="false"
             aria-controls="mastertagihan"
-            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
+            class="nav-link py-3 d-flex align-items-center gap-3 px-3 text-secondary"
           >
-            <i class="ri-database-2-line fs-5" style="color: #00ff00"></i>
-            <span>Potongan Biaya</span>
-            <i class="ri-arrow-down-s-line fs-5 fw-semibold ms-auto"></i>
+            <i class="ri-database-2-line" style="color: #0baa13"></i>
+            <span>Master Tagihan</span>
+            <i class="ri-arrow-down-s-line ms-auto"></i>
           </RouterLink>
           <div class="collapse" id="mastertagihan">
             <ul class="nav-menu ms-4 text-secondary">
               <li class="nav-item">
-                <RouterLink to="/master-tagihan/biaya" exact-active-class="aktif" class="nav-link"
-                  >Biaya</RouterLink
+                <RouterLink
+                  to="/master-tagihan/biaya"
+                  exact-active-class="aktif"
+                  class="nav-link py-3"
+                  ><span>Biaya</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/master-tagihan/group-biaya"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Group Biaya</RouterLink
+                  class="nav-link py-3"
+                  ><span>Group Biaya</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/master-tagihan/satuan-biaya"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Satuan Biaya</RouterLink
+                  class="nav-link py-3"
+                  ><span>Satuan Biaya</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/master-tagihan/tahun-ajaran"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Tahun Ajaran</RouterLink
+                  class="nav-link py-3"
+                  ><span>Tahun Ajaran</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/master-tagihan/Kategori-biaya"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Kategori Biaya</RouterLink
+                  class="nav-link py-3"
+                  ><span>Kategori Biaya</span></RouterLink
                 >
               </li>
               <li class="nav-item">
                 <RouterLink
                   to="/master-tagihan/master-faktur"
                   exact-active-class="aktif"
-                  class="nav-link"
-                  >Master Faktur</RouterLink
+                  class="nav-link py-3"
+                  ><span>Master Faktur</span></RouterLink
                 >
               </li>
             </ul>
@@ -214,9 +219,9 @@ onClickOutside(toggleRef, (event) => {
           <RouterLink
             to="/keringanan-biaya"
             exact-active-class="active"
-            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
+            class="nav-link py-3 d-flex align-items-center gap-3 px-3 text-secondary"
           >
-            <i class="ri-sensor-line fs-5" style="color: #ffcc00"></i>
+            <i class="ri-sensor-line" style="color: #ffcc00"></i>
             <span>Keringanan/Dispen</span>
           </RouterLink>
         </li>
@@ -225,9 +230,9 @@ onClickOutside(toggleRef, (event) => {
           <RouterLink
             to="/satuan-periode"
             exact-active-class="active"
-            class="nav-link d-flex align-items-center gap-3 fs-6 px-3 text-secondary"
+            class="nav-link py-3 d-flex align-items-center gap-3 px-3 text-secondary"
           >
-            <i class="ri-calendar-todo-line fs-5" style="color: #993333"></i>
+            <i class="ri-calendar-todo-line" style="color: #993333"></i>
             <span>Satuan Periode</span>
           </RouterLink>
         </li>
@@ -237,7 +242,7 @@ onClickOutside(toggleRef, (event) => {
   <!-- end:sidebar  -->
   <main class="main-content position-relative">
     <!-- begin:navbar  -->
-    <nav class="navbar pt-4 text-white">
+    <nav class="navbar pt-3 text-white">
       <div class="row g-0 w-100 px-4 align-items-center">
         <div class="col-6">
           <div class="search">
@@ -246,7 +251,8 @@ onClickOutside(toggleRef, (event) => {
         </div>
         <div class="col-6">
           <div class="d-flex gap-3 fs-5 justify-content-end ms-auto ms-md-4 align-items-center">
-            <div class="profile dropdown ms-auto cursor">
+            <!-- profile -->
+            <div class="head-item dropdown ms-auto cursor">
               <a
                 class="text-decoration-none text-white d-flex align-items-center gap-1"
                 href="#"
@@ -255,7 +261,7 @@ onClickOutside(toggleRef, (event) => {
                 aria-expanded="false"
               >
                 <i class="ri-user-3-fill"></i>
-                <span class="d-none d-md-block fs-6">Sign In</span>
+                <span class="d-none d-md-block">Sign In</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-end mt-2">
                 <li><span class="dropdown-item-text">Profile</span></li>
@@ -264,13 +270,16 @@ onClickOutside(toggleRef, (event) => {
                 <li><a class="dropdown-item" href="#">Login</a></li>
               </ul>
             </div>
-            <div class="setting cursor">
+            <!-- setting -->
+            <div class="head-item cursor">
               <i class="ri-settings-3-fill"></i>
             </div>
-            <div @click="toggle = !toggle" class="toggle d-block d-lg-none cursor">
-              <i class="ri-menu-line"></i>
+            <!-- toggle -->
+            <div @click="toggle = !toggle" class="head-item d-block d-lg-none cursor">
+              <i class="ri-menu-line fs-4"></i>
             </div>
-            <div class="notification dropdown cursor">
+            <!-- notification -->
+            <div class="head-item dropdown cursor">
               <a
                 class="text-decoration-none text-white"
                 href="#"
@@ -278,7 +287,7 @@ onClickOutside(toggleRef, (event) => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="ri-notification-4-fill"></i>
+                <i class="ri-notification-3-fill"></i>
               </a>
               <ul class="dropdown-menu dropnotif dropdown-menu-end p-3">
                 <li class="d-flex">
@@ -319,7 +328,7 @@ onClickOutside(toggleRef, (event) => {
       </div>
     </nav>
     <!-- end:navbar  -->
-    <div class="px-4 mt-4">
+    <div class="px-4 mt-4 mb-4">
       <RouterView />
     </div>
   </main>
