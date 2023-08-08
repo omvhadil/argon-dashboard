@@ -5,7 +5,7 @@ import DataTable from 'datatables.net-vue3'
 import DataTablesCore from 'datatables.net-bs5'
 import 'datatables.net-select'
 import 'datatables.net-responsive'
-import { dataFaktur } from '@/storage'
+import { dataFaktur } from '@/storage/Index.js'
 
 const router = useRouter()
 
