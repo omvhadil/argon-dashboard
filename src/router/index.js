@@ -23,6 +23,11 @@ const router = createRouter({
               component: () => import('../views/faktur-pembayaran/TabelFaktur.vue')
             },
             {
+              path: '/faktur-pembayaran/tambah-faktur',
+              name: 'tambah-faktur',
+              component: () => import('../views/faktur-pembayaran/tambah-faktur/TambahFaktur.vue')
+            },
+            {
               path: '/faktur-pembayaran/lunas',
               name: 'lunas',
               component: () => import('../views/faktur-pembayaran/Lunas.vue')

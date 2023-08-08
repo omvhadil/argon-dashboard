@@ -42,7 +42,12 @@ body {
 
 /* header */
 .bg-green {
-  background-color: var(--color-green)!important;
+  background-image: var(--color-green-gradient)!important;
+}
+.btn-green-gradient {
+  background-image: var(--color-green-gradient)!important;
+  color: #fff!important;
+  border-radius: 0.5rem!important;
 }
 .bg-header {
   height: 100%;
@@ -82,8 +87,8 @@ body {
   left: 0;
 }
 .nav-link.active {
-  background-color: var(--color-green)!important;
-  color: #fff!important;
+  background-color: #344767!important;
+  color: #ffffff!important;
   border-radius: 0.5rem;
 }
 .nav-link.actived {

@@ -10,14 +10,16 @@
         <div class="card-body">
           <!-- title card  -->
           <div class="mb-4">
-            <h5 class="title-card m-0">Informasi Umum</h5>
+            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Informasi Umum</h5>
             <span class="subtitle-card text-secondary">format tabel</span>
           </div>
           <form action="">
             <!-- nama biaya -->
             <div class="row mb-4">
-              <label for="nama-biaya" class="col-md-4 col-lg-12 col-form-label">Nama Biaya</label>
-              <div class="col-12 col-md-8 col-lg-12">
+              <label for="nama-biaya" class="col-md-4 col-lg-3 col-form-label fw-medium"
+                >Nama Biaya</label
+              >
+              <div class="col-12 col-md-8 col-lg-9">
                 <input
                   type="text"
                   name=""
@@ -29,8 +31,10 @@
             </div>
             <!-- jenis biaya  -->
             <div class="row mb-4">
-              <label for="jenis-biaya" class="col-md-4 col-lg-12 col-form-label">Jenis Biaya</label>
-              <div class="col-12 col-md-8 col-lg-12">
+              <label for="jenis-biaya" class="col-md-4 col-lg-3 col-form-label fw-medium"
+                >Jenis Biaya</label
+              >
+              <div class="col-12 col-md-8 col-lg-9">
                 <select
                   class="form-select"
                   name=""
@@ -46,10 +50,10 @@
             </div>
             <!-- kategori biaya  -->
             <div class="row mb-4">
-              <label for="kategori-biaya" class="col-md-4 col-lg-12 col-form-label"
+              <label for="kategori-biaya" class="col-md-4 col-lg-3 col-form-label fw-medium"
                 >Kategori Biaya</label
               >
-              <div class="col-12 col-md-8 col-lg-12">
+              <div class="col-12 col-md-8 col-lg-9">
                 <select
                   class="form-select"
                   name=""
@@ -65,8 +69,10 @@
             </div>
             <!-- kode biaya  -->
             <div class="row mb-4">
-              <label for="kode-biaya" class="col-md-4 col-lg-12 col-form-label">Kode Biaya</label>
-              <div class="col-12 col-md-8 col-lg-12">
+              <label for="kode-biaya" class="col-md-4 col-lg-3 col-form-label fw-medium"
+                >Kode Biaya</label
+              >
+              <div class="col-12 col-md-8 col-lg-9">
                 <select
                   class="form-select"
                   name=""
@@ -80,8 +86,8 @@
             </div>
             <!-- satuan  -->
             <div class="row mb-4">
-              <label for="satuan" class="col-md-4 col-lg-12 col-form-label">Satuan</label>
-              <div class="col-12 col-md-8 col-lg-12">
+              <label for="satuan" class="col-md-4 col-lg-3 col-form-label fw-medium">Satuan</label>
+              <div class="col-12 col-md-8 col-lg-9">
                 <select class="form-select" name="" id="satuan" aria-label="Default select example">
                   <option selected>pilih satuan</option>
                   <option value="pcs">PCS</option>
@@ -91,10 +97,10 @@
             </div>
             <!-- harga / nominal -->
             <div class="row mb-4">
-              <label for="harga-nominal" class="col-md-4 col-lg-12 col-form-label"
+              <label for="harga-nominal" class="col-md-4 col-lg-3 col-form-label fw-medium"
                 >Harga / Nominal</label
               >
-              <div class="col-12 col-md-8 col-lg-12">
+              <div class="col-12 col-md-8 col-lg-9">
                 <div class="input-group">
                   <span class="input-group-text">Rp</span>
                   <input type="text" name="" class="form-control" placeholder="10.000" />
@@ -104,15 +110,17 @@
             </div>
             <!-- deskripsi -->
             <div class="row mb-4">
-              <label for="deskripsi" class="col-md-4 col-lg-12 col-form-label">Deskripsi</label>
-              <div class="col-12 col-md-8 col-lg-12">
+              <label for="deskripsi" class="col-md-4 col-lg-3 col-form-label fw-medium"
+                >Deskripsi</label
+              >
+              <div class="col-12 col-md-8 col-lg-9">
                 <textarea class="form-control" name="" id="deskripsi" rows="3"></textarea>
               </div>
             </div>
             <!-- status -->
             <div class="row mb-4">
-              <label for="status" class="col-md-4 col-lg-12 col-form-label">Status</label>
-              <div class="col-12 col-md-8 col-lg-12">
+              <label for="status" class="col-md-4 col-lg-3 col-form-label fw-medium">Status</label>
+              <div class="col-12 col-md-8 col-lg-9">
                 <div class="form-check form-check-inline">
                   <input
                     class="form-check-input"
@@ -138,7 +146,8 @@
             </div>
             <!-- btn simpan -->
             <div class="row mt-4">
-              <div class="col-12 d-flex justify-content-end">
+              <div class="col-12 d-flex gap-3 justify-content-end">
+                <button type="reset" class="btn btn-outline-dark">Reset</button>
                 <button type="submit" class="btn btn-dark">Simpan</button>
               </div>
             </div>

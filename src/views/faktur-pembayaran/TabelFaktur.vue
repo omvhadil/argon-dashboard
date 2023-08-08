@@ -1,11 +1,26 @@
 <!-- eslint-disable vue/multi-word-component-names -->
+<script setup>
+import { useRouter } from 'vue-router'
+import DataTable from 'datatables.net-vue3'
+import DataTablesCore from 'datatables.net-bs5'
+import 'datatables.net-select'
+import 'datatables.net-responsive'
+
+const router = useRouter()
+
+DataTable.use(DataTablesCore)
+const options = {
+  responsive: true
+}
+</script>
 <template>
   <div class="text-white mb-4">
     <span class="fs-6">Faktur Pembayaran / Tabel Faktur</span>
     <p class="fw-bold">Table Faktur</p>
   </div>
+  <!-- card dashboard -->
   <div class="row gy-3">
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-2">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
@@ -21,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-2">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
@@ -37,7 +52,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-2">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
@@ -53,7 +68,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-3">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
@@ -69,7 +84,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-lg-3">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
@@ -86,4 +101,77 @@
       </div>
     </div>
   </div>
+  <!-- datatable faktur -->
+  <div class="row">
+    <div class="col-12 col-lg-12 mx-auto">
+      <div class="card mt-4">
+        <div class="card-body">
+          <!-- title card  -->
+          <div class="d-flex px-3 mt-2">
+            <div class="mb-4">
+              <h5 class="title-card m-0 fw-bold text-dark-emphasis">Tabel Faktur</h5>
+              <span class="subtitle-card text-secondary">format tabel</span>
+            </div>
+            <div class="ms-auto">
+              <button
+                class="btn btn-green-gradient"
+                @click="router.push('/faktur-pembayaran/tambah-faktur')"
+              >
+                <i class="ri-add-line"></i>
+                <span class="ms-2">Tambah Faktur</span>
+              </button>
+            </div>
+          </div>
+          <div class="data-tables">
+            <DataTable class="display nowrap" :options="options">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Nama</th>
+                  <th>Alamat</th>
+                  <th>Tanggal lahir</th>
+                  <th>Jenis Kelamin</th>
+                  <th>Nama wali</th>
+                  <th>Keterangan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+              </tbody></DataTable
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+<style scoped>
+@import 'bootstrap';
+@import 'datatables.net-bs5';
+</style>
