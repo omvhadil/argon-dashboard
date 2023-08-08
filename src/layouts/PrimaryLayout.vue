@@ -244,7 +244,7 @@ onClickOutside(toggleRef, (event) => {
     <!-- begin:navbar  -->
     <nav class="navbar pt-3 text-white">
       <div class="row g-0 w-100 px-4 align-items-center">
-        <div class="col-6">
+        <div class="col-6 col-lg-4 me-auto">
           <div class="input-group">
             <span class="input-group-text bg-white border-white">
               <i class="ri-search-line fw-bold"></i>

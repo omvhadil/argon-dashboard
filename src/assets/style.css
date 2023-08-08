@@ -1,0 +1,20 @@
+/* ============= basic ==============  */
+body {
+    background-color: var(--color-body)!important;
+    font-family: var(--font-style)!important;
+  }
+  .cursor {
+    cursor: pointer;  
+  }
+
+/* ============= Scrollbar ==============  */
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0.5rem;
+  }

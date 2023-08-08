@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
-
+@import './style.css';
 :root {
   /* font size  */
   --font-normal: 1rem;
@@ -12,6 +12,7 @@
   /* color  */
   --color-body: #f8f7fa;
   --color-green: #2dce89;
+  --color-black: #344767;
   --color-green-gradient: linear-gradient(310deg, #2dce89, #2dcecc);
 }
 .image-svg {
@@ -22,32 +23,51 @@
   color: var(--color-green)!important;
   margin-top: -3rem!important;
 }
-body {
-  background-color: var(--color-body)!important;
-  font-family: var(--font-style)!important;
-}
-.cursor {
-  cursor: pointer;  
-}
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 0.5rem;
-}
-
-/* header */
-.bg-green {
-  background-image: var(--color-green-gradient)!important;
-}
 .btn-green-gradient {
   background-image: var(--color-green-gradient)!important;
   color: #fff!important;
   border-radius: 0.5rem!important;
+}
+
+/* ============= DataTables ============= */
+/* table */
+.table td, th{
+  white-space: nowrap;
+  color: varr(--color-black)!important;
+}
+
+/* pagination */
+.pagination {
+  margin-bottom: 1rem!important;
+}
+.row.dt-row {
+  margin-bottom: 1rem!important;
+  margin-top: 1rem!important;
+}
+.paginate_button {
+  margin-left: 0.5rem!important;
+  overflow: hidden!important;
+}
+.page-item.active .page-link {
+  background-color: var(--color-green)!important;
+  border-color: var(--color-green)!important;
+  color: #ffffff!important;
+}
+.page-link {
+  color: #344767!important;
+}
+/* info  */
+.dataTables_info {
+  margin-bottom: 1rem!important;
+}
+/* length  */
+.dataTables_length {
+  margin-bottom: 1rem!important;
+}
+
+/* ================ Header ================ */
+.bg-green {
+  background-image: var(--color-green-gradient)!important;
 }
 .bg-header {
   height: 100%;
@@ -69,7 +89,7 @@ body {
   font-size: 0.8rem!important;
 }
 
-/* sidebar */
+/* ============== Sidebar ==============  */
 .sidebar {
   position: fixed!important;
   top: 0;
@@ -121,7 +141,8 @@ body {
   box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)!important;
   border-radius: 1rem!important;
 }
-/* dashboard */
+
+/* ================= Dashboard ================  */
 .card-icon {
   font-size: 1.2rem;
   color: #fff;
@@ -152,6 +173,9 @@ body {
 }
 
 @media (min-width: 992px) {
+  .search {
+    width: 200px!important;
+  }
   .main-content {
     margin-left: 300px;
   }

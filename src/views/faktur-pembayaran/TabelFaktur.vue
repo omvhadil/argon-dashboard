@@ -5,12 +5,13 @@ import DataTable from 'datatables.net-vue3'
 import DataTablesCore from 'datatables.net-bs5'
 import 'datatables.net-select'
 import 'datatables.net-responsive'
+import { dataFaktur } from '@/storage'
 
 const router = useRouter()
 
 DataTable.use(DataTablesCore)
 const options = {
-  responsive: true
+  responsive: false
 }
 </script>
 <template>
@@ -107,61 +108,43 @@ const options = {
       <div class="card mt-4">
         <div class="card-body">
           <!-- title card  -->
-          <div class="d-flex px-3 mt-2">
-            <div class="mb-4">
+          <div class="row px-3 mt-2">
+            <div class="col-12 col-md-6 mb-4">
               <h5 class="title-card m-0 fw-bold text-dark-emphasis">Tabel Faktur</h5>
               <span class="subtitle-card text-secondary">format tabel</span>
             </div>
-            <div class="ms-auto">
-              <button
-                class="btn btn-green-gradient"
-                @click="router.push('/faktur-pembayaran/tambah-faktur')"
-              >
-                <i class="ri-add-line"></i>
-                <span class="ms-2">Tambah Faktur</span>
-              </button>
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-lg-end mb-4">
+              <div>
+                <button
+                  class="btn btn-green-gradient"
+                  @click="router.push('/faktur-pembayaran/tambah-faktur')"
+                >
+                  <i class="ri-add-line"></i>
+                  <span class="ms-2">Tambah Faktur</span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="data-tables">
-            <DataTable class="display nowrap" :options="options">
-              <thead>
+          <div class="table-responsive">
+            <DataTable class="table display" :options="options">
+              <thead class="table-light">
                 <tr>
-                  <th></th>
-                  <th>Nama</th>
-                  <th>Alamat</th>
-                  <th>Tanggal lahir</th>
-                  <th>Jenis Kelamin</th>
-                  <th>Nama wali</th>
-                  <th>Keterangan</th>
+                  <th>No Faktur</th>
+                  <th>Nama Faktur</th>
+                  <th>Nama Lengkap</th>
+                  <th>Jenis Peserta Didik</th>
+                  <th>Pembayaran</th>
+                  <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td></td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>6</td>
-                  <td>6</td>
-                  <td>6</td>
-                  <td>6</td>
-                  <td>6</td>
-                  <td>6</td>
+                <tr v-for="item in dataFaktur" :key="item - id" class="py-2">
+                  <td>{{ item.no_faktur }}</td>
+                  <td>{{ item.nama_faktur }}</td>
+                  <td>{{ item.nama_lengkap }}</td>
+                  <td>{{ item.jenis_peserta_didik }}</td>
+                  <td>{{ item.pembayaran }}</td>
+                  <td>-</td>
                 </tr>
               </tbody></DataTable
             >
@@ -174,4 +157,8 @@ const options = {
 <style scoped>
 @import 'bootstrap';
 @import 'datatables.net-bs5';
+
+.table-responsive::-webkit-scrollbar {
+  height: 0.4rem !important;
+}
 </style>
