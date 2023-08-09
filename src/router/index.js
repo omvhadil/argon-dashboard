@@ -100,6 +100,11 @@ const router = createRouter({
               component: () => import('../views/master-tagihan/TahunAjaran.vue')
             },
             {
+              path: '/master-tagihan/tambah-tahun-ajaran',
+              name: 'tambah-tahun-ajaran',
+              component: () => import('../views/master-tagihan/tahun-ajaran/TambahTahunAjaran.vue')
+            },
+            {
               path: '/master-tagihan/kategori-biaya',
               name: 'kategori-biaya',
               component: () => import('../views/master-tagihan/KategoriBiaya.vue')

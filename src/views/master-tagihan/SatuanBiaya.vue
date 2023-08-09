@@ -10,8 +10,7 @@ const router = useRouter()
     <span class="fs-6">Master Tagihan / Satuan Biaya</span>
     <p class="fw-bold">Satuan Biaya</p>
   </div>
-  <!-- table  -->
-  <!-- table subkategori biaya -->
+  <!-- table satuan biaya -->
   <div class="card">
     <div class="card-body">
       <!-- title card  -->
