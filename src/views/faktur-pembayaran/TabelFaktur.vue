@@ -11,7 +11,18 @@ const router = useRouter()
 
 DataTable.use(DataTablesCore)
 const options = {
-  responsive: false
+  responsive: false,
+  language: {
+    search: 'Cari',
+    info: 'Tampilan _START_ sampai _END_ dari _TOTAL_ data',
+    infoFiltered: '(Tampilkan _MAX_ data)',
+    paginate: {
+      first: '<',
+      previous: '<',
+      next: '>',
+      last: '>'
+    }
+  }
 }
 </script>
 <template>
@@ -21,14 +32,14 @@ const options = {
   </div>
   <!-- card dashboard -->
   <div class="row gy-3">
-    <div class="col-12 col-md-6 col-lg-2">
+    <div class="col-12 col-md-6 col-lg-2 pe-lg-0">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-medium text-secondary">Lunas</p>
+              <p class="mb-1 text-uppercase text-small fw-medium text-secondary">Lunas</p>
               <h5 class="fw-bold">2.231</h5>
-              <p class="mb-0 text-secondary">Peserta didik</p>
+              <p class="mb-0 text-secondary text-small">Peserta didik</p>
             </div>
             <div class="card-icon bg-primary bg-gradient">
               <i class="ri-exchange-dollar-line"></i>
@@ -37,14 +48,14 @@ const options = {
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-2">
+    <div class="col-12 col-md-6 col-lg-2 pe-0">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-medium text-secondary">belum lunas</p>
+              <p class="mb-1 text-uppercase text-small fw-medium text-secondary">belum lunas</p>
               <h5 class="fw-bold">3.543</h5>
-              <p class="mb-0 text-secondary">Peserta didik</p>
+              <p class="mb-0 text-secondary text-small">Peserta didik</p>
             </div>
             <div class="card-icon bg-danger bg-gradient">
               <i class="ri-user-follow-line"></i>
@@ -53,14 +64,14 @@ const options = {
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-2">
+    <div class="col-12 col-md-6 col-lg-2 pe-lg-0">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-medium text-secondary">total faktur</p>
+              <p class="mb-1 text-uppercase text-small fw-medium text-secondary">total faktur</p>
               <h5 class="fw-bold">5.434</h5>
-              <p class="mb-0 text-secondary">Faktur</p>
+              <p class="mb-0 text-secondary text-small">Faktur</p>
             </div>
             <div class="card-icon bg-warning bg-gradient">
               <i class="ri-survey-line"></i>
@@ -69,14 +80,14 @@ const options = {
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-3">
+    <div class="col-12 col-md-6 col-lg-3 pe-lg-0">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-medium text-secondary">total tertagih</p>
+              <p class="mb-1 text-uppercase text-small fw-medium text-secondary">total tertagih</p>
               <h5 class="fw-bold">3.332</h5>
-              <p class="mb-0 text-secondary">Peserta didik</p>
+              <p class="mb-0 text-secondary text-small">Peserta didik</p>
             </div>
             <div class="card-icon bg-secondary bg-gradient">
               <i class="ri-hand-coin-line"></i>
@@ -90,9 +101,11 @@ const options = {
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="">
-              <p class="mb-1 text-uppercase fw-medium text-secondary">total penerimaan</p>
+              <p class="mb-1 text-uppercase text-small fw-medium text-secondary">
+                total penerimaan
+              </p>
               <h5 class="fw-bold">Rp 875.774.474</h5>
-              <p class="mb-0 text-secondary">Dari 500 Faktur</p>
+              <p class="mb-0 text-secondary text-small">Dari 500 Faktur</p>
             </div>
             <div class="card-icon bg-success bg-gradient">
               <i class="ri-wallet-3-line"></i>
@@ -127,7 +140,7 @@ const options = {
           </div>
           <div class="table-responsive">
             <DataTable class="table display" :options="options">
-              <thead class="table-light">
+              <thead>
                 <tr>
                   <th>No Faktur</th>
                   <th>Nama Faktur</th>
