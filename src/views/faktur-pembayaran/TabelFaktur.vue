@@ -48,7 +48,7 @@ const options = {
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-2 pe-0">
+    <div class="col-12 col-md-6 col-lg-2 pe-lg-0">
       <div class="card rounded-4">
         <div class="card-body">
           <div class="d-flex align-items-center">
@@ -123,7 +123,7 @@ const options = {
           <!-- title card  -->
           <div class="row px-3 mt-2">
             <div class="col-12 col-md-6 mb-4">
-              <h5 class="title-card m-0 fw-bold text-dark-emphasis">Tabel Faktur</h5>
+              <h5 class="title-card m-0 text-dark-emphasis">Tabel Faktur</h5>
               <span class="subtitle-card text-secondary">format tabel</span>
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-center justify-content-lg-end mb-4">

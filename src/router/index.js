@@ -90,6 +90,11 @@ const router = createRouter({
               component: () => import('../views/master-tagihan/SatuanBiaya.vue')
             },
             {
+              path: '/master-tagihan/tambah-satuan',
+              name: 'tambah-satuan-biaya',
+              component: () => import('../views/master-tagihan/satuan/TambahSatuan.vue')
+            },
+            {
               path: '/master-tagihan/tahun-ajaran',
               name: 'tahun-ajaran',
               component: () => import('../views/master-tagihan/TahunAjaran.vue')
@@ -98,6 +103,16 @@ const router = createRouter({
               path: '/master-tagihan/kategori-biaya',
               name: 'kategori-biaya',
               component: () => import('../views/master-tagihan/KategoriBiaya.vue')
+            },
+            {
+              path: '/master-tagihan/tambah-kategori',
+              name: 'tambah-kategori',
+              component: () => import('../views/master-tagihan/kategori/TambahKategori.vue')
+            },
+            {
+              path: '/master-tagihan/tambah-subkategori',
+              name: 'tambah-subkategori',
+              component: () => import('../views/master-tagihan/kategori/TambahSubKategori.vue')
             },
             {
               path: '/master-tagihan/master-faktur',

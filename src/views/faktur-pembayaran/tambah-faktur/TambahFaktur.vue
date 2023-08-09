@@ -113,11 +113,10 @@
       </div>
     </div>
   </div>
-  <div class="card mt-4">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-12">
-          <!-- tab manu -->
+  <div class="row mt-4 gy-3 gy-lg-0">
+    <div class="col-12 col-md-9">
+      <div class="card">
+        <div class="card-body">
           <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link text-secondary actived" href="">Potongan Biaya</a>
@@ -132,10 +131,6 @@
               <a class="nav-link text-secondary" href="#">Log Activitas</a>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-9 col-lg-8">
           <div class="content py-3" style="min-height: 5rem !important">
             <span
               >Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eius ratione
@@ -159,22 +154,14 @@
             >
           </div>
         </div>
-        <div class="col-12 col-md-3 col-lg-4 py-3">
-          <div class="d-grid gap-2">
-            <button class="btn btn-dark" type="button">
-              <i class="ri-save-3-line"></i> Simpan
-            </button>
-            <button class="btn btn-dark" type="button">
-              <i class="ri-eye-line"></i> Pratinjau
-            </button>
-            <button class="btn btn-dark" type="button">
-              <i class="ri-send-plane-line"></i> Kirim
-            </button>
-            <button class="btn btn-dark" type="button">
-              <i class="ri-printer-line"></i> Cetak
-            </button>
-          </div>
-        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="d-grid gap-2">
+        <button class="btn btn-dark" type="button"><i class="ri-save-3-line"></i> Simpan</button>
+        <button class="btn btn-dark" type="button"><i class="ri-eye-line"></i> Pratinjau</button>
+        <button class="btn btn-dark" type="button"><i class="ri-send-plane-line"></i> Kirim</button>
+        <button class="btn btn-dark" type="button"><i class="ri-printer-line"></i> Cetak</button>
       </div>
     </div>
   </div>

@@ -30,62 +30,6 @@
   border-radius: 0.5rem!important;
 }
 
-/* ============= DataTables ============= */
-/* table */
-.table td, th{
-  white-space: nowrap;
-}
-.table {
-  border-color: #e9ecef!important;
-  color: #67748e!important;
-}
-thead tr th {
-  color: #8392ab!important;
-  font-size: .65rem!important;
-  text-transform: uppercase!important;
-}
-tbody tr td {
-  padding: 0.75rem 1.5rem!important;
-  font-size: .875rem!important;
-  line-height: 1.5!important;
-  font-weight: 400!important;
-  color: #8392ab!important;
-}
-
-/* pagination */
-.pagination {
-  margin-bottom: 1rem!important;
-}
-.row.dt-row {
-  margin-bottom: 1rem!important;
-  margin-top: 1rem!important;
-}
-.paginate_button {
-  margin-left: 0.5rem!important;
-  overflow: hidden!important;
-}
-.page-item.active .page-link {
-  background-color: var(--color-green)!important;
-  border-color: var(--color-green)!important;
-  color: #ffffff!important;
-}
-.page-link {
-  color: var(--color-gray)!important;
-  border-radius: 50%!important;
-}
-.dataTables_filter {
-  color: var(--color-gray)!important;
-}
-/* info  */
-.dataTables_info {
-  margin-bottom: 1rem!important;
-  color: var(--color-gray)!important;
-}
-/* length  */
-.dataTables_length {
-  margin-bottom: 1rem!important;
-  color: var(--color-gray)!important;
-}
 
 /* ================ Header ================ */
 .bg-green {
@@ -136,11 +80,8 @@ tbody tr td {
 .nav-link.actived {
   background-color: var(--color-body)!important;
   color: var(--color-green)!important;
-  font-weight: 600;
+  font-weight: 700!important;
   border-radius: 0.5rem;
-}
-.nav-link.active span{
-  font-weight: 600;
 }
 .nav-link.aktif {
   font-weight: 600;
@@ -148,11 +89,7 @@ tbody tr td {
 }
 .nav-link span {
   font-size: var(--font-small);
-  font-weight: 400!important;
   white-space: no-wrap!important;
-}
-.nav-link i {
-  font-size: 1.1rem;
 }
 .head-sign-in {
   font-size: var(--font-small)
@@ -160,13 +97,13 @@ tbody tr td {
 .dropmenu {
   transition: all 0.3s ease-in-out;
 }
+
+/* ================= Dashboard ================  */
 .card {
   border: none!important;
   box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)!important;
   border-radius: 1rem!important;
 }
-
-/* ================= Dashboard ================  */
 .card-icon {
   font-size: 1.2rem;
   color: #fff;
@@ -197,6 +134,9 @@ tbody tr td {
 }
 
 @media (min-width: 992px) {
+  .dataTable tbody tr td {
+    padding: 1rem 2rem 1rem 0rem!important;
+  }
   .search {
     width: 200px!important;
   }
