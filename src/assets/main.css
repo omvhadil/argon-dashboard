@@ -54,6 +54,23 @@
 .text-small {
   font-size: 0.8rem!important;
 }
+/*================ table biasa ====================*/
+.table thead tr th {
+  font-size: var(--font-small) !important;
+  color: var(--color-gray) !important;
+  white-space: nowrap;
+  padding-right: 2rem !important;
+}
+.table tbody tr td {
+  padding: 0.7rem 2rem 0.7rem 0.5rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  color: #8392ab !important;
+  white-space: nowrap;
+}
+.table-responsive::-webkit-scrollbar {
+  height: 0.4rem !important;
+}
 
 /* ============== Sidebar ==============  */
 .sidebar {
@@ -135,7 +152,10 @@
 
 @media (min-width: 992px) {
   .dataTable tbody tr td {
-    padding: 1rem 2rem 1rem 0rem!important;
+    padding: 0.7rem 2rem 0.7rem 0.5rem!important;
+  }
+  .table tbody tr td {
+    padding: 0.7rem 2rem 0.7rem 0.5rem!important;
   }
   .search {
     width: 200px!important;

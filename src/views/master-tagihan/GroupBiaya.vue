@@ -1,4 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
+<script setup></script>
 <template>
   <div class="text-white mb-4">
     <span class="fs-6">Master Tagihan / Group Biaya</span>
@@ -25,27 +26,8 @@
                   name=""
                   class="form-control"
                   id="nama-group-biaya"
-                  placeholder="Nama Group Biaya..."
+                  placeholder="Exc: Paket MTS"
                 />
-              </div>
-            </div>
-            <!-- kategori biaya  -->
-            <div class="row mb-4">
-              <label for="kategori-biaya" class="col-md-4 col-lg-3 col-form-label fw-medium"
-                >Kategori Biaya</label
-              >
-              <div class="col-12 col-md-8 col-lg-9">
-                <select
-                  class="form-select"
-                  name=""
-                  id="kategori-biaya"
-                  aria-label="Default select example"
-                >
-                  <option selected>pilih kategori biaya</option>
-                  <option value="kateogri-1">kategori 1</option>
-                  <option value="kategori-2">kategori 2</option>
-                  <option value="kategori-3">kategori 3</option>
-                </select>
               </div>
             </div>
             <!-- biaya  -->

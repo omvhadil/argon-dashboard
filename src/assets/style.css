@@ -34,7 +34,7 @@ body {
   text-transform: uppercase!important;
 }
 .dataTable tbody tr td {
-  padding: 1.5rem 2rem 1.5rem 0rem!important;
+  padding: 0.7rem 2rem 0.7rem 0.5rem!important;
   font-size: .875rem!important;
   font-weight: 400!important;
   color: #8392ab!important;

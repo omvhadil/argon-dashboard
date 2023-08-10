@@ -17,10 +17,10 @@ const options = {
     info: 'Tampilan _START_ sampai _END_ dari _TOTAL_ data',
     infoFiltered: '(Tampilkan _MAX_ data)',
     paginate: {
-      first: '<',
+      // first: '<',
       previous: '<',
-      next: '>',
-      last: '>'
+      next: '>'
+      // last: '>'
     }
   }
 }
@@ -151,13 +151,18 @@ const options = {
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="item in dataFaktur" :key="item - id" class="py-2">
+                <tr v-for="item in dataFaktur" :key="item.id" class="py-2">
                   <td>{{ item.no_faktur }}</td>
                   <td>{{ item.nama_faktur }}</td>
                   <td>{{ item.nama_lengkap }}</td>
                   <td>{{ item.jenis_peserta_didik }}</td>
                   <td>{{ item.pembayaran }}</td>
                   <td>-</td>
+                  <!-- <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td> -->
                 </tr>
               </tbody></DataTable
             >
@@ -170,8 +175,4 @@ const options = {
 <style scoped>
 @import 'bootstrap';
 @import 'datatables.net-bs5';
-
-.table-responsive::-webkit-scrollbar {
-  height: 0.4rem !important;
-}
 </style>

@@ -80,6 +80,11 @@ const router = createRouter({
               component: () => import('../views/master-tagihan/Biaya.vue')
             },
             {
+              path: '/master-tagihan/tambah-biaya',
+              name: 'tambah-biaya',
+              component: () => import('../views/master-tagihan/biaya/TambahBiaya.vue')
+            },
+            {
               path: '/master-tagihan/group-biaya',
               name: 'group-biaya',
               component: () => import('../views/master-tagihan/GroupBiaya.vue')

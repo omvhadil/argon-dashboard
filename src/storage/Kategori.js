@@ -9,6 +9,21 @@ export const kategori = [
         nama_kategori: 'Buku',
         deskripsi: '',
     },
+    {
+        id: 3,
+        nama_kategori: 'Spp',
+        deskripsi: '',
+    },
+    {
+        id: 4,
+        nama_kategori: 'Infaq',
+        deskripsi: '',
+    },
+    {
+        id: 5,
+        nama_kategori: 'Gedung',
+        deskripsi: '',
+    },
 ]
 
 export const subkategori = [
