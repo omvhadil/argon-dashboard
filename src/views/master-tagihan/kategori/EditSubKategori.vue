@@ -1,7 +1,10 @@
+<script setup>
+import { kategori } from '@/storage/Index.js'
+</script>
 <template>
   <div class="text-white mb-4">
     <span class="fs-6">Master Tagihan / Kategori Biaya</span>
-    <p class="fw-bold">Tambah Kategori</p>
+    <p class="fw-bold">Edit Sub-Kategori</p>
   </div>
   <!-- tambah biaya -->
   <div class="row">
@@ -10,14 +13,14 @@
         <div class="card-body">
           <!-- title card  -->
           <div class="mb-4">
-            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Tambah</h5>
-            <span class="subtitle-card text-secondary">Kategori Biaya</span>
+            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Edit</h5>
+            <span class="subtitle-card text-secondary">Sub-Kategori Biaya</span>
           </div>
           <form action="">
             <!-- nama kategori -->
             <div class="row mb-4">
               <label for="nama-kategori" class="col-md-4 col-lg-3 col-form-label fw-medium"
-                >Nama Kategori</label
+                >Nama Sub Kategori</label
               >
               <div class="col-12 col-md-8 col-lg-9">
                 <input
@@ -25,23 +28,27 @@
                   name=""
                   class="form-control"
                   id="nama-kategori"
-                  placeholder="Contoh: Baju"
+                  placeholder="Seragam MTS Putra"
                 />
               </div>
             </div>
-            <!-- deskripsi -->
+            <!-- kategori utama  -->
             <div class="row mb-4">
-              <label for="deskripsi" class="col-md-4 col-lg-3 col-form-label fw-medium"
-                >Deskripsi</label
+              <label for="kategori-utama" class="col-md-4 col-lg-3 col-form-label fw-medium"
+                >Kategori Utama</label
               >
               <div class="col-12 col-md-8 col-lg-9">
-                <textarea
-                  class="form-control"
-                  placeholder="Contoh: Baju Putra"
+                <select
+                  class="form-select"
                   name=""
-                  id="deskripsi"
-                  rows="3"
-                ></textarea>
+                  id="kategori-utama"
+                  aria-label="Default select example"
+                >
+                  <option selected>pilih kategori utama</option>
+                  <option v-for="item in kategori" :key="item.id" :value="item.nama_kategori">
+                    {{ item.nama_kategori }}
+                  </option>
+                </select>
               </div>
             </div>
             <!-- btn simpan -->

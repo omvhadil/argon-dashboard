@@ -18,7 +18,7 @@ const router = useRouter()
         <div class="col-12 col-md-6">
           <div class="mb-4">
             <h5 class="title-card m-0 fw-semibold text-dark-emphasis">Tabel Biaya</h5>
-            <span class="subtitle-card text-secondary">format tabel</span>
+            <span class="subtitle-card text-secondary">Total Data: -</span>
           </div>
         </div>
         <div class="col-12 col-md-6 d-flex justify-content-end">
@@ -27,7 +27,7 @@ const router = useRouter()
               @click="router.push('/master-tagihan/tambah-biaya')"
               class="btn btn-green-gradient d-flex align-items-center"
             >
-              <i class="ri-add-line fs-5 me-2"></i> Biaya
+              <i class="ri-add-line fs-5 me-2"></i> Tambah Biaya
             </button>
           </div>
         </div>
@@ -60,13 +60,19 @@ const router = useRouter()
               <td>{{ item.satuan }}</td>
               <td>{{ item.nominal }}</td>
               <td>{{ item.keterangan }}</td>
-              <td class="d-flex gap-2">
-                <button class="btn btn-sm btn-secondary" title="edit">
-                  <i class="ri-edit-box-line"></i>
-                </button>
-                <button class="btn btn-sm btn-secondary" title="hapus">
-                  <i class="ri-delete-bin-6-line"></i>
-                </button>
+              <td>
+                <div class="d-flex gap-2">
+                  <button
+                    @click="router.push('/master-tagihan/edit-biaya')"
+                    class="btn btn-sm btn-secondary"
+                    title="edit"
+                  >
+                    <i class="ri-edit-box-line"></i>
+                  </button>
+                  <button class="btn btn-sm btn-secondary" title="hapus">
+                    <i class="ri-delete-bin-6-line"></i>
+                  </button>
+                </div>
               </td>
             </tr>
           </tbody>

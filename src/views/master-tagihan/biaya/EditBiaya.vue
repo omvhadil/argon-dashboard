@@ -10,7 +10,7 @@ const data = reactive({
 <template>
   <div class="text-white mb-4">
     <span class="fs-6">Master Tagihan / Biaya</span>
-    <p class="fw-bold">Tambah Biaya</p>
+    <p class="fw-bold">Edit Biaya</p>
   </div>
   <div class="row">
     <div class="col-12 col-lg-10 mx-auto">
@@ -18,7 +18,7 @@ const data = reactive({
         <div class="card-body">
           <!-- title card  -->
           <div class="mb-4">
-            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Tambah</h5>
+            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Edit</h5>
             <span class="subtitle-card text-secondary"> Biaya</span>
           </div>
           <form action="">
@@ -142,6 +142,33 @@ const data = reactive({
               >
               <div class="col-12 col-md-8 col-lg-9">
                 <textarea class="form-control" name="" id="deskripsi" rows="3"></textarea>
+              </div>
+            </div>
+            <!-- status -->
+            <div class="row mb-4">
+              <label for="status" class="col-md-4 col-lg-3 col-form-label fw-medium">Status</label>
+              <div class="col-12 col-md-8 col-lg-9">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="status"
+                    id="aktif"
+                    value="aktif"
+                    checked
+                  />
+                  <label class="form-check-label" for="aktif">Aktif</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="status"
+                    id="nonaktif"
+                    value="nonaktif"
+                  />
+                  <label class="form-check-label" for="nonaktif">Nonaktif</label>
+                </div>
               </div>
             </div>
             <!-- btn simpan -->

@@ -1,7 +1,7 @@
 export const kategori = [
     {
         id: 1,
-        nama_kategori: 'Seragam',
+        nama_kategori: 'Baju',
         deskripsi: '',
     },
     {

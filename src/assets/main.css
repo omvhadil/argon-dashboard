@@ -29,6 +29,11 @@
   color: #fff!important;
   border-radius: 0.5rem!important;
 }
+/* .form-check-input:checked {
+  background-color: var(--color-green)!important;
+  border-color: var(--color-green)!important;
+} */
+
 
 
 /* ================ Header ================ */

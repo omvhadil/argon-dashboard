@@ -74,6 +74,7 @@ const router = createRouter({
           path: '/master-tagihan',
           name: 'master-tagihan',
           children: [
+            // ===================== Biaya =====================
             {
               path: '/master-tagihan/biaya',
               name: 'biaya',
@@ -85,10 +86,27 @@ const router = createRouter({
               component: () => import('../views/master-tagihan/biaya/TambahBiaya.vue')
             },
             {
+              path: '/master-tagihan/edit-biaya',
+              name: 'edit-biaya',
+              component: () => import('../views/master-tagihan/biaya/EditBiaya.vue')
+            },
+            // ===================== Group Biaya =====================
+            {
               path: '/master-tagihan/group-biaya',
               name: 'group-biaya',
               component: () => import('../views/master-tagihan/GroupBiaya.vue')
             },
+            {
+              path: '/master-tagihan/tambah-group-biaya',
+              name: 'tambah-group-biaya',
+              component: () => import('../views/master-tagihan/group-biaya/TambahGroupBiaya.vue')
+            },
+            {
+              path: '/master-tagihan/edit-group-biaya',
+              name: 'edit-group-biaya',
+              component: () => import('../views/master-tagihan/group-biaya/EditGroupBiaya.vue')
+            },
+            // ===================== Satuan Biaya =====================
             {
               path: '/master-tagihan/satuan-biaya',
               name: 'satuan-biaya',
@@ -100,6 +118,12 @@ const router = createRouter({
               component: () => import('../views/master-tagihan/satuan/TambahSatuan.vue')
             },
             {
+              path: '/master-tagihan/edit-satuan',
+              name: 'edit-satuan-biaya',
+              component: () => import('../views/master-tagihan/satuan/EditSatuan.vue')
+            },
+            // ===================== Tahun Ajaran =====================
+            {
               path: '/master-tagihan/tahun-ajaran',
               name: 'tahun-ajaran',
               component: () => import('../views/master-tagihan/TahunAjaran.vue')
@@ -109,6 +133,12 @@ const router = createRouter({
               name: 'tambah-tahun-ajaran',
               component: () => import('../views/master-tagihan/tahun-ajaran/TambahTahunAjaran.vue')
             },
+            {
+              path: '/master-tagihan/edit-tahun-ajaran',
+              name: 'edit-tahun-ajaran',
+              component: () => import('../views/master-tagihan/tahun-ajaran/EditTahunAjaran.vue')
+            },
+            // ===================== Kategori Biaya =====================
             {
               path: '/master-tagihan/kategori-biaya',
               name: 'kategori-biaya',
@@ -120,10 +150,21 @@ const router = createRouter({
               component: () => import('../views/master-tagihan/kategori/TambahKategori.vue')
             },
             {
+              path: '/master-tagihan/edit-kategori',
+              name: 'edit-kategori',
+              component: () => import('../views/master-tagihan/kategori/EditKategori.vue')
+            },
+            {
               path: '/master-tagihan/tambah-subkategori',
               name: 'tambah-subkategori',
               component: () => import('../views/master-tagihan/kategori/TambahSubKategori.vue')
             },
+            {
+              path: '/master-tagihan/edit-subkategori',
+              name: 'edit-subkategori',
+              component: () => import('../views/master-tagihan/kategori/EditSubKategori.vue')
+            },
+            // ===================== Mater Faktur =====================
             {
               path: '/master-tagihan/master-faktur',
               name: 'master-faktur',

@@ -1,31 +1,31 @@
 <template>
   <div class="text-white mb-4">
-    <span class="fs-6">Master Tagihan / Satuan Biaya</span>
-    <p class="fw-bold">Tambah Satuan Biaya</p>
+    <span class="fs-6">Master Tagihan / Kategori Biaya</span>
+    <p class="fw-bold">Edit Kategori Biaya</p>
   </div>
-  <!-- tambah satuan biaya -->
+  <!-- tambah biaya -->
   <div class="row">
     <div class="col-12 col-lg-10 mx-auto">
       <div class="card mt-4">
         <div class="card-body">
           <!-- title card  -->
           <div class="mb-4">
-            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Tambah</h5>
-            <span class="subtitle-card text-secondary"> Satuan Biaya</span>
+            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Edit</h5>
+            <span class="subtitle-card text-secondary">Kategori Biaya</span>
           </div>
           <form action="">
-            <!-- nama satuan -->
+            <!-- nama kategori -->
             <div class="row mb-4">
-              <label for="nama-satuan" class="col-md-4 col-lg-3 col-form-label fw-medium"
-                >Nama Satuan</label
+              <label for="nama-kategori" class="col-md-4 col-lg-3 col-form-label fw-medium"
+                >Nama Kategori</label
               >
               <div class="col-12 col-md-8 col-lg-9">
                 <input
                   type="text"
                   name=""
                   class="form-control"
-                  id="nama-satuan"
-                  placeholder="Contoh: PCS"
+                  id="nama-kategori"
+                  placeholder="Baju"
                 />
               </div>
             </div>
@@ -37,7 +37,7 @@
               <div class="col-12 col-md-8 col-lg-9">
                 <textarea
                   class="form-control"
-                  placeholder="Contoh: Satuan Biaya PCS"
+                  placeholder="Baju Putra"
                   name=""
                   id="deskripsi"
                   rows="3"

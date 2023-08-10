@@ -2,7 +2,7 @@
 <template>
   <div class="text-white mb-4">
     <span class="fs-6">Master Tagihan / Tahun Ajaran</span>
-    <p class="fw-bold">Tambah Tahun Ajaran</p>
+    <p class="fw-bold">Edit Tahun Ajaran</p>
   </div>
 
   <div class="row">
@@ -11,7 +11,7 @@
         <div class="card-body">
           <!-- title card  -->
           <div class="mb-4">
-            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Tambah</h5>
+            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Edit</h5>
             <span class="subtitle-card text-secondary">Tahun Ajaran</span>
           </div>
           <form action="">
@@ -26,7 +26,7 @@
                   name=""
                   class="form-control"
                   id="tahun-ajaran"
-                  placeholder="Contoh: 2022-2023"
+                  placeholder="2022-2023"
                 />
               </div>
             </div>

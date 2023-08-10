@@ -13,8 +13,8 @@ import { kategori } from '@/storage/Index.js'
         <div class="card-body">
           <!-- title card  -->
           <div class="mb-4">
-            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Informasi Umum</h5>
-            <span class="subtitle-card text-secondary">format tabel</span>
+            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Tambah</h5>
+            <span class="subtitle-card text-secondary">Sub-Kategori Biaya</span>
           </div>
           <form action="">
             <!-- nama kategori -->
@@ -28,7 +28,7 @@ import { kategori } from '@/storage/Index.js'
                   name=""
                   class="form-control"
                   id="nama-kategori"
-                  placeholder="Nama Sub Kategori..."
+                  placeholder="Contoh: Seragam MTS Putra"
                 />
               </div>
             </div>

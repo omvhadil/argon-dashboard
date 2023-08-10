@@ -1,7 +1,7 @@
 <template>
   <div class="text-white mb-4">
     <span class="fs-6">Master Tagihan / Satuan Biaya</span>
-    <p class="fw-bold">Tambah Satuan Biaya</p>
+    <p class="fw-bold">Edit Satuan Biaya</p>
   </div>
   <!-- tambah satuan biaya -->
   <div class="row">
@@ -10,8 +10,8 @@
         <div class="card-body">
           <!-- title card  -->
           <div class="mb-4">
-            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Tambah</h5>
-            <span class="subtitle-card text-secondary"> Satuan Biaya</span>
+            <h5 class="title-card m-0 fw-bold text-dark-emphasis">Form Edit</h5>
+            <span class="subtitle-card text-secondary">Satuan Biaya</span>
           </div>
           <form action="">
             <!-- nama satuan -->
@@ -25,7 +25,7 @@
                   name=""
                   class="form-control"
                   id="nama-satuan"
-                  placeholder="Contoh: PCS"
+                  placeholder="PCS"
                 />
               </div>
             </div>
@@ -37,7 +37,7 @@
               <div class="col-12 col-md-8 col-lg-9">
                 <textarea
                   class="form-control"
-                  placeholder="Contoh: Satuan Biaya PCS"
+                  placeholder="Biaya Satuan PCS"
                   name=""
                   id="deskripsi"
                   rows="3"
