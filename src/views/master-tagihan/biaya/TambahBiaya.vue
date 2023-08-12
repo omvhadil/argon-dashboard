@@ -7,12 +7,7 @@ import { reactive } from 'vue'
 const data = reactive({
   jenis_biaya: '',
   value: null,
-  data: [
-    {
-      id: 1,
-      name_subkategori: 'seragam'
-    }
-  ]
+  data: ['Batman', 'Robin', 'Joker']
 })
 </script>
 <template>
