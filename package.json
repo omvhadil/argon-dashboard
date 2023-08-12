@@ -10,6 +10,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@vueform/multiselect": "^2.6.2",
     "@vueuse/core": "^10.3.0",
     "bootstrap": "^5.3.1",
     "datatables.net-bs5": "^1.13.6",
@@ -20,7 +21,6 @@
     "pinia": "^2.1.4",
     "remixicon": "^3.5.0",
     "vue": "^3.3.4",
-    "vue-multiselect": "^3.0.0-beta.2",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {

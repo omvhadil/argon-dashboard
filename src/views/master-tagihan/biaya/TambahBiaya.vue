@@ -1,10 +1,18 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
+import Multiselect from '@vueform/multiselect'
 import { kategori, satuan } from '@/storage/Index.js'
 import { reactive } from 'vue'
 
 const data = reactive({
-  jenis_biaya: ''
+  jenis_biaya: '',
+  value: null,
+  data: [
+    {
+      id: 1,
+      name_subkategori: 'seragam'
+    }
+  ]
 })
 </script>
 <template>
@@ -82,19 +90,13 @@ const data = reactive({
                 >Sub-Kategori Biaya</label
               >
               <div class="col-12 col-md-8 col-lg-9">
-                <select
-                  class="form-select"
-                  name=""
-                  multiple
-                  size="3"
-                  id="kategori-biaya"
-                  aria-label="Default select example"
-                >
-                  <option selected>tahan Ctrl jika ingin pilih banyak</option>
-                  <option v-for="item in kategori" :key="item.id" :value="item.nama_kategori">
-                    {{ item.nama_kategori }}
-                  </option>
-                </select>
+                <Multiselect
+                  v-model="data.value"
+                  mode="tags"
+                  placeholder="Pilih SubKategori"
+                  :options="data.data"
+                  :search="true"
+                />
               </div>
             </div>
             <!-- QTY -->
@@ -157,3 +159,4 @@ const data = reactive({
     </div>
   </div>
 </template>
+<style src="@vueform/multiselect/themes/default.css"></style>
