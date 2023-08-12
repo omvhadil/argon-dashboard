@@ -1,14 +1,24 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import Multiselect from '@vueform/multiselect'
-import { kategori, satuan } from '@/storage/Index.js'
-import { reactive } from 'vue'
+import { newKategori, satuan } from '@/storage/Index.js'
+import { reactive, watch } from 'vue'
 
 const data = reactive({
   jenis_biaya: '',
   value: null,
-  data: ['Batman', 'Robin', 'Joker']
+  kategori: null,
+  data: null
 })
+
+watch(
+  () => data.kategori,
+  (newValue, oldValue) => {
+    if (newValue !== oldValue && newValue !== null) {
+      data.data = newKategori[data.kategori - 1].sub_kategori.map((item) => item.nama_sub_kategori)
+    }
+  }
+)
 </script>
 <template>
   <div class="text-white mb-4">
@@ -71,9 +81,14 @@ const data = reactive({
                   name=""
                   id="kategori-biaya"
                   aria-label="Default select example"
+                  v-model="data.kategori"
                 >
-                  <option selected>pilih kategori biaya</option>
-                  <option v-for="item in kategori" :key="item.id" :value="item.nama_kategori">
+                  <option value>pilih kategori biaya</option>
+                  <option
+                    v-for="item in newKategori"
+                    :key="item.id_kategori"
+                    :value="item.id_kategori"
+                  >
                     {{ item.nama_kategori }}
                   </option>
                 </select>
@@ -91,7 +106,8 @@ const data = reactive({
                   placeholder="Pilih SubKategori"
                   :options="data.data"
                   :search="true"
-                />
+                >
+                </Multiselect>
               </div>
             </div>
             <!-- QTY -->
